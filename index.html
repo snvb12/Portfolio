@@ -2,76 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio | Sam</title>
+  <meta name="description" content="Welcome to the personal portfolio of Sam, a first-year Computer Science student at NBS College. Explore my projects and get in touch!" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image" href="computer.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
-<body>
+<body class="overflow-x-hidden font-[Poppins] bg-black">
 
-  <header class="bg-amber-50 pt-10 lg:pt-8 pb-0 lg:pb-16">
-    <div class="container">
-        <nav class="flex justify-between font-medium">
-            <a class="hidden md:inline" href="index.html">Home</a>
-            <a class="hidden md:inline" href="work.html">Work</a>
-            <a class="hidden md:inline" href="about.html">About</a>
-            <a class="hidden md:inline" href="contact.html">Contact</a>
-            </div>
+  <!--nav bar-->
+  <header id="home" class="pt-10 lg:pt-8 pb-0 lg:pb-16">
+    <div class="container mx-auto px-6">
 
+      <nav class="flex justify-between items-center font-medium bg-black text-white px-8 py-8 sticky top-0 z-10">
+        <a href="#home" class="text-2xl font-bold text-white hover:text-blue-400 transition-colors duration-200">Sam Villegas</a>
+       
+        <div class="flex space-x-8">
+          <a href="#home" class="hidden md:inline hover:text-blue-400 hover:underline underline-offset-4 transition-colors duration-200">Home</a>
+          <a href="#projects" class="hidden md:inline hover:text-blue-400 hover:underline underline-offset-4 transition-colors duration-200">Projects</a>
+          <a href="#about" class="hidden md:inline hover:text-blue-400 hover:underline underline-offset-4 transition-colors duration-200">About</a>
+          <a href="#contact" class="hidden md:inline hover:text-blue-400 hover:underline underline-offset-4 transition-colors duration-200">Contact</a>
+          <a href="https://tinyurl.com/m63a9tys" class="hidden md:inline hover:text-blue-400 hover:underline underline-offset-4 transition-colors duration-200">Resume</a>
 
-            <div class="flex items-center justify-center mt-20">
+        </div>
+      </nav>      
 
-              <div class="w-xs mt-10 font-medium text-center text-white py-20 px-10 border rounded-xl bg-amber-50">
-                  <h3 class="text-2xl">Hello!</h3>
-                  <span class="text-base">Samantha Nicole V. Tohoy</span>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum animi quam commodi accusamus ut autem vel dicta eum, inventore magnam consequatur ullam dolorum excepturi cumque velit amet officia possimus debitis!</p>
-                  </div>
+  
+  </header>
 
+  <div class="m-8 p-8 flex items-center gap-6 h-full">
+    <img src="sn.png" alt="Profile" class="w-80 h-80 rounded-full object-cover" />
+    <h1 class="text-xs lg:text-3xl text-white">Hi, I'm Sam! A first-year student at NBS College</h1>
 
-    <div class="profile-photo">
-      <img src="sam.jpg" alt="Photo of Your Name" width="200" height="200">
+  </div>
+</div>
+
+  <!--proj -->
+  
+  <section id="projects" class="m-20">
+    <div class="w-full overflow-hidden whitespace-nowrap text-2xl font-bold my-12">
+      <span class="ml-10 text-white">My Projects</span>
     </div>
 
-    <nav class="navigation">
-      <a href="#about">About</a> |
-      <a href="#projects">Projects</a> |
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
+    <section class="container mx-auto px-6 grid grid-cols-12 gap-8">
+      <a href="https://github.com/snvb12/Simple-Calculator.git" target="_blank" class="col-span-12 md:col-span-4 border border-white rounded-md bg-gray-800 p-4 hover:bg-gray-700 transition">
+        <h2 class="text-lg lg:text-xl font-medium mb-4 text-white">Simple Calculator</h2>
+        <p class="text-white">This is a basic calculator program written in C language. It allows users to perform basic operations like addition, subtraction, multiplication, and division.</p>
+      </a>      
 
-  <hr>
+      <a href="https://github.com/snvb12/Simple-Website.git" target="_blank" class="col-span-12 md:col-span-4 border border-white rounded-md bg-gray-800 p-4 hover:bg-gray-700 transition">
+        <h2 class="text-lg lg:text-xl font-medium mb-4 text-white">Simple Website - Concon's Bakeshop</h2>
+        <p class="text-white">A simple website built with HTML for structure and Tailwind CSS for fast, responsive styling, making the design process quicker and more efficient.</p>
+      </a>      
 
-  <div class="section" id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm a web developer with a passion for clean design and efficient code. I enjoy building beautiful, functional websites and learning new technologies.</p>
-  </div>
+      <a href="#" target="_blank" class="col-span-12 md:col-span-4 border border-white rounded-md bg-gray-800 p-4 hover:bg-gray-700 transition">
+        <h2 class="text-lg lg:text-xl font-medium mb-4 text-white">Portfolio</h2>
+        <p class="text-white">This is my personal portfolio created using HTML for structure and Tailwind CSS for fast, responsive styling. It showcases my projects and skills in a clean and modern design.</p>
+      </a>     
 
-  <hr>
+    </section>
+  </section>
 
-  <div class="section" id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project One</h3>
-      <p>A brief description of your first project.</p>
+  <!--about-->
+  <section id="about" class="pt-24 pb-8 bg-black">
+    <div class="container mx-auto px-6 grid grid-cols-12 gap-8">
+      <div class="col-span-12 lg:col-span-8 col-start-1 lg:col-start-3 text-white text-center">
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p class="text-lg">Hi, I'm Sam! a first-year Computer Science student at NBS College. I'm interested in learning web development and currently working on improving my skills in HTML, CSS, and JavaScript. I'm excited to learn more and build projects as I continue my studies.</p>
+      </div>
     </div>
-    <div class="project">
-      <h3>Project Two</h3>
-      <p>A brief description of your second project.</p>
+  </section>
+
+  <!--contacts-->
+  <section id="contact" class="pt-24 pb-8 bg-black">
+    <div class="container mx-auto px-6 grid grid-cols-12 gap-8">
+      <div class="col-start-1 lg:col-start-4 col-span-12 lg:col-span-6 flex flex-col justify-center text-center mb-16 lg:mb-24">
+        <span class="ml-10 text-white text-2xl">Get In Touch</span>
+        <div id="ff-compose" class="bg-white"></div>
+<script async defer src="https://formfacade.com/include/116494352004436847815/form/1FAIpQLSfhFxHAP3rD9baSeJV_lZZ4ATuz5IHzeNkGCmjr5SQyG81oew/classic.js?div=ff-compose"></script>
+        </a>        
+      </div>
+
+      
+      <div class="col-span-12 md:col-span-10 lg:col-span-8 col-start-1 md:col-start-2 lg:col-start-3 flex flex-col md:flex-row items-center justify-start md:justify-between space-y-4 md:space-y-0 text-lg font-medium mb-8 text-white">
+        <a href="https://www.facebook.com/snica.villegas" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.instagram.com/lilyofthevalleii?igsh=MTFseWdkZmRsNW90NQ==" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://tinyurl.com/pnu4ts4v">LinkedIn</a>
+      </div>
     </div>
-    <!-- Add more projects as needed -->
-  </div>
+  </section>
 
-  <hr>
-
-  <div class="section" id="contact">
-    <h2>Contact</h2>
-    <p>Email me at: <a href="mailto:your@email.com">your@email.com</a></p>
-  </div>
-
-  <hr>
-
-  <div class="footer">
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
-  </div>
-
+  <!--footer-->
+  <footer class="flex justify-center items-center py-6 bg-white border-t">
+    <p class="text-gray-600">&copy; CodeWithSn. All rights reserved.</p>
+  </footer>
 </body>
 </html>
